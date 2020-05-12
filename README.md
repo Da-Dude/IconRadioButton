@@ -14,7 +14,7 @@ Under the "General" tab you can adjust display properties such as display size a
 For further UI changes you can use CSS/SASS to style the icon-radiobutton class and child card/card selected items. 
 
 ## Issues, suggestions and feature requests
-[link to GitHub issues]
+
 
 ## Development and contribution
 Dragos Vrabie

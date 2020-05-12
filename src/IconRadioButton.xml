@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="auraq.iconradiobutton.IconRadioButton" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Icon Radio Button</name>
+    <description>Presents radio buttons with corresponding Icons</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Data source">
+            <property key="radioAttribute" type="attribute">
+                <caption>Attribute (path)</caption>
+                <description/>
+                <attributeTypes>
+                    <attributeType name="Enum"/>
+                </attributeTypes>
+            </property>
+            <property key="iconMapping" type="object" isList="true">
+            <caption>Icon mapping list</caption>
+            <description/>
+            <properties>
+                <propertyGroup caption="Icon Mapping">
+                    <property key="enumValue" type="string">
+                        <caption>Enum value</caption>
+                        <description>The value for the icon</description>
+                    </property>
+                    <property key="enumIcon" type="icon">
+                        <caption>Icon</caption>
+                        <description>The icon to display</description>
+                    </property>
+                </propertyGroup>
+            </properties>
+        </property>
+        </propertyGroup>
+        <propertyGroup caption="General">
+            <property key="displayCaption" type="boolean" defaultValue="true">
+                <caption>Display Caption</caption>
+                <description>Display caption together with the icons on the cards</description>
+            </property>            
+            <property key="buttonSize" type="enumeration" defaultValue="fitContent">
+                <caption>Button size</caption>
+                <description>Choose whether the size of the buttons matches the content, extends horizontally to fit all the parent's width or is of fixed size.</description>
+                <enumerationValues>
+                    <enumerationValue key="fitContent">Fit contents</enumerationValue>
+                    <enumerationValue key="flex">Flex</enumerationValue>
+                    <enumerationValue key="fixed">Fixed size</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="width" type="integer" defaultValue="150">
+                <caption>Width</caption>
+                <description>The button width (in pixels) if fixed size was chosen.</description>                
+            </property>
+            <property key="height" type="integer" defaultValue="120">
+                <caption>Height</caption>
+                <description>The button height (in pixels) if fixed size was chosen.</description>                
+            </property>
+            <systemProperty key="Visibility"/>
+        </propertyGroup>        
+    </properties>
+</widget>

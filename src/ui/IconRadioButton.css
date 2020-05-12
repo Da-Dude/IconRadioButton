@@ -1,0 +1,51 @@
+/*
+Place your custom CSS here
+*/
+.icon-radiobutton {
+    display: flex;      
+}
+
+
+.icon-radiobutton .card {
+    margin: 5px;
+    text-align: center;
+    cursor:pointer;
+    width: fit-content;
+}
+
+.icon-radiobutton .card:hover {
+    background: #ccc;
+}
+
+.icon-radiobutton .card > *{
+    display: block;
+    cursor:pointer;
+}
+
+.icon-radiobutton .card span{
+    font-size: 24px;
+    padding: 5px;
+}
+
+.icon-radiobutton .card img{
+    margin:auto;
+    padding: 5px;
+    width:32px;
+    height:32px;
+}
+
+.icon-radiobutton .card:first-child{
+    margin-left: 0;
+}
+
+.icon-radiobutton .card:last-child{
+    margin-right: 0;
+}
+
+.icon-radiobutton .selected {
+    border-color: cornflowerblue;
+}
+
+.icon-radiobutton .selected > *{
+    color: cornflowerblue;
+}
